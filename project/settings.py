@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-8kdz*^kh=fwcwcl*c+$3)um&$536a0w4$gwe(usas)+4k@$&!t
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 
 
 # Application definition
@@ -68,7 +69,9 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'project.wsgi.application'
+# WSGI_APPLICATION = 'project.wsgi.application'
+
+WSGI_APPLICATION = 'project.wsgi.app'
 
 
 # Database

@@ -37,5 +37,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('weather/', include('weather.urls')),  # Ensure 'weather/' is included correctly
+    path('', include('weather.urls')),  # Ensure 'weather/' is included correctly
 ]
