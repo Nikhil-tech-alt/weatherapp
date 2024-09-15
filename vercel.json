@@ -22,7 +22,6 @@
     ],
     "env": {
       "DJANGO_SETTINGS_MODULE": "project.settings",
-      "DATABASE_URL": "sqlite:///db.sqlite3",
       "SECRET_KEY": "django-insecure-8kdz*^kh=fwcwcl*c+$3)um&$536a0w4$gwe(usas)+4k@$&!t",
       "DEBUG": "True",
       "ALLOWED_HOSTS": "127.0.0.1,.vercel.app"
@@ -34,4 +33,3 @@
       }
     }
   }
-  
