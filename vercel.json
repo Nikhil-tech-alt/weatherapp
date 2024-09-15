@@ -1,35 +1,8 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "manage.py",
-        "use": "@vercel/python",
-        "config": {
-          "maxLambdaSize": "50mb",
-          "runtime": "python3.10"
-        }
-      }
-    ],
     "routes": [
       {
-        "src": "/static/(.*)",
-        "dest": "/static/$1"
-      },
-      {
         "src": "/(.*)",
-        "dest": "manage.py"
+        "dest": "api/wsgi.py"
       }
-    ],
-    "env": {
-      "DJANGO_SETTINGS_MODULE": "project.settings",
-      "SECRET_KEY": "django-insecure-8kdz*^kh=fwcwcl*c+$3)um&$536a0w4$gwe(usas)+4k@$&!t",
-      "DEBUG": "True",
-      "ALLOWED_HOSTS": "127.0.0.1,.vercel.app"
-    },
-    "functions": {
-      "manage.py": {
-        "memory": 1024,
-        "maxDuration": 10
-      }
-    }
+    ]
   }
